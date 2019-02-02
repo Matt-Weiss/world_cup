@@ -20,6 +20,6 @@ class Team
     players.select do |player|
       player.position == position
     end
-  end  
+  end
 
 end
