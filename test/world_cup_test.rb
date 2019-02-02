@@ -79,7 +79,7 @@ class WorldCupTest < Minitest::Test
 
     expected = {"forward" => [mbappe],
                 "midfielder" => [pogba, modric],
-                "defender", [vida]}
+                "defender" => [vida]}
 
     assert_equal expected, world_cup.all_players_by_position
 

@@ -14,4 +14,14 @@ class WorldCup
     end
     position_players.flatten.compact
   end
+
+  def all_players_by_position
+    position_players = Hash.new{|hash, key| hash[key] = []}
+    teams.each do |team|
+      team.players.each do |player|
+        position_players[player.position] << player
+      end
+    end
+    position_players
+  end
 end
